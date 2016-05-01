@@ -96,6 +96,8 @@ textarea {
    ========================================================================== */
 
 html{
+        background: url('img/back.jpg') no-repeat;
+        min-width: 700px;
 		box-sizing: border-box;
 }
 
@@ -131,7 +133,7 @@ html{
     display: block;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 155px;
+    margin-top: 178px;
     padding:1px;
     
 }
@@ -139,10 +141,11 @@ html{
     position: absolute;
     margin-right: auto;
     margin-left: auto;
-    top: 40px;
+    top: 15px;
     right: 0;
     left: 0;
     z-index:200;
+    width: 100%;
 }
 .btn{
     border: 9px solid #f03d99;
@@ -151,10 +154,10 @@ html{
     text-align: center;
     text-transform: uppercase;
     letter-spacing: .4em; 
-    padding: 1.5px 40px 1.5px 40px;
+    padding: 1px 90px 1px 90px;
     position: absolute;
-    top:700px;
-    left: 700px;    
+    top:803px;
+    left: 790px;    
 }
 .btn a{
     color: #f03d99;
@@ -193,42 +196,48 @@ html{
     line-height: 1.8em;
     font-size: 14px;
     position: absolute;
-    top: 500px;
-    left: 700px;
+    top: 675px;
+    left: 870px;
 }
 .what-lines{
-    padding: 4em;
-        margin-bottom:30px;
+    padding: 8em 4em 1em 4em;
+    margin-bottom:30px;
+    z-index: 100;
+
 }
 .what-lines h2{
     position: absolute;
-    top: 940px;
-    left: 530px;
+    top: 1050px;
+    left: 700px;
     text-transform: uppercase;
     font-weight:bold;
-    letter-spacing: .4em; 
+    letter-spacing: .6em; 
     font-size: 20px;
+    z-index: 140;
 }
 #pink{
     margin-left: -20px;
     position: relative;
+    z-index: 100;
 }
 .what-lines p{
     line-height: 1.7em;
     background: white;
-    max-width: 600px;
+    max-width: 690px;
     margin-top: 300px;
     position: absolute;
-    z-index: 100;
-    left: 330px;
-    top: 730px;
-    font-size: 25px;
+    z-index: 140;
+    left:440px;
+    top: 870px;
+    font-size: 26px;
     font-family: 'Crimson Text', serif;
 }
 .areas-covered{
     padding-top: 9em;
     margin-left: auto;
     margin-right: auto;
+    z-index: 300;
+    
 }
 .areas-covered h3{
     background:#790896;
@@ -244,56 +253,82 @@ html{
     position: absolute;
     top:180px;
     left: 90px;
+    z-index: 140;
 }
 .areas-covered h2{
     text-transform: uppercase;
     letter-spacing: .4em; 
     text-align: center;
     padding-bottom: 80px;
+    z-index: 500;
   
 }
 .areas-covered p{
     font-family: 'Crimson Text', serif;
     font-size: 17px;
     max-width: 330px;
-    display: block;
+    display: inlblock;
     line-height: 1.8em;
+    z-index: 150;
 }
 .blog, .social, .strategys{
-    border: 4px solid #f03d99;
-    padding:1.5em;   
+ border: 4px solid #f03d99;
+    padding:1.5em;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    z-index: 150;
 }
 
 .social-media, .blogger, .strategy{
-    display: inline;
+   display: block;
     float: right;
-    margin-left: auto;
-    margin-right: auto;
-    padding-right: 2em;
+    margin-right: 60px;
     position: relative;
-    
+    z-index: 200;
   
 }
-.footer{
-    
-    background: black;
+#back{
+    background: url(img/back.jpg);
+background-repeat: no-repeat;
+background-position: left;
+padding: 15px 0px 15px 0px;
+margin-left: 10px;
+    z-index: 3;
     position: absolute;
-    top: 700px;
-    width:100%;
-    color: white;
+    top: 2000;
+    left:0;
+    width: 100%;
+    padding-bottom: 0;
+    
 }
-.footer ul li{
+footer h2{
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: .3em;
+    font-size: 20px;
+    padding-left: 40px;
+    z-index: 200;
+
+}
+footer ul li{
     list-style-type: none;
     display: inline;
     padding-right: 15px;
+    z-index: 200;
 }
-#wrapper{
+footer p,  #link, #update{
+    padding-top: 30px;
+    float: right;
+    clear: right;
+    padding-right: 15px;
+   color: white;
+ z-index: 300;
     position: relative;
-    margin: 0px;
-    padding: 0px;
 }
-
-
+#update{
+    padding-top: 70px;
+}
 
 /* ==========================================================================
    Helper classes
